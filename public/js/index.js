@@ -9,8 +9,9 @@
         socket.on('connect', () => {
             console.log('connected to server');
             createNumberElement();
-            appendFirst(document.getElementById("visitors").getElementsByClassName("container")[0], visitorsCounter);
-        });
+            document.getElementById("visitors").getElementsByClassName("container")[0].appendChild(visitorsCounter)
+            visitorsCounter.appendChild(document.getElementById("anonymousButton"));    
+    });
 
         //like when the server is down
         socket.on('disconnect', () => {

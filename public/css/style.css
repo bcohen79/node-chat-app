@@ -5,20 +5,14 @@ body
   font-size: 1em;
 }
 
-#visitors {
-    background-image: url(https://i.imgur.com/Dt45LS0.png), radial-gradient(#ffffa0, #fae65f 20%, #f39c10);
+.visitorsCount {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 
-#anonymousButton {
-  margin-top: 30px;
-}
-
-#visitorsCount
-{
-  height: 11em;
-  margin: auto;
-  text-align: center;
-}
 .visitorsCount .wrapper
 {
   display: inline-block;
