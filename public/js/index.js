@@ -31,7 +31,7 @@
 
         function keepMeAnonymous() {
             socket.emit('anonymousRequest');
-            document.getElementById("anonymousButton").disabled = true;
+            document.getElementById("anonymousButton").style.visibility = 'hidden';
         }
 
         function createNumberElement() {
