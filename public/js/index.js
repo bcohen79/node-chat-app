@@ -9,7 +9,7 @@
         socket.on('connect', () => {
             console.log('connected to server');
             createNumberElement();
-            document.body.appendChild(visitorsCounter);
+            appendFirst(document.getElementById("visitors").getElementsByClassName("container")[0], visitorsCounter);
         });
 
         //like when the server is down
@@ -58,8 +58,7 @@
                     wrapper.appendChild(number);
                 }
 
-
-                visitorsCounter.insertBefore(wrapper, visitorsCounter.firstChild);
+                appendFirst(visitorsCounter, wrapper);
         }
 
         function setVisitorsCount(visitors) {
@@ -81,4 +80,8 @@
         navigator.geolocation.getCurrentPosition((position) => {
 
         })
+    }
+
+    function appendFirst(container, elementToAppend) {
+        container.insertBefore(elementToAppend, container.firstChild);
     }

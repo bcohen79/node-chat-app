@@ -1,18 +1,20 @@
 html, body { height: 100%; }
 body
 {
-  /*  Add noise to remove banding */
-  background-image: url(https://i.imgur.com/Dt45LS0.png), radial-gradient(#ffffa0, #fae65f 20%, #f39c10);
   /* Change size here. There are sometimes rounding errors */
   font-size: 1em;
 }
-.visitorsCount
+
+#visitors {
+    background-image: url(https://i.imgur.com/Dt45LS0.png), radial-gradient(#ffffa0, #fae65f 20%, #f39c10);
+}
+
+#anonymousButton {
+  margin-top: 30px;
+}
+
+#visitorsCount
 {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
   height: 11em;
   margin: auto;
   text-align: center;
