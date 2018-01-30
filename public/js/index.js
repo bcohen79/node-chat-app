@@ -13,7 +13,7 @@
 
             if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
               document.getElementById("mobile-version").appendChild(visitorsCounter);
-              document.getElementById("mobile-version").appendChild(document.getElementById("anonymousButton"));
+              appendFirst(document.getElementById("mobile-version"), document.getElementById("anonymousButton"));
             }
 
     });
