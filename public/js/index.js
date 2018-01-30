@@ -9,7 +9,13 @@
         socket.on('connect', () => {
             console.log('connected to server');
             createNumberElement();
-            document.getElementById("visitors").getElementsByClassName("container")[0].appendChild(visitorsCounter)
+            document.getElementById("visitors").getElementsByClassName("container")[0].appendChild(visitorsCounter);
+
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+              document.getElementById("mobile-version").appendChild(visitorsCounter);
+              document.getElementById("mobile-version").appendChild(document.getElementById("anonymousButton"));
+            }
+
     });
 
         //like when the server is down
