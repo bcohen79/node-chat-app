@@ -6,11 +6,6 @@
 
         visitorsCounter.className = 'visitorsCount';
 
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-               document.getElementById("mobile-version").style.display = 'flex';
-            document.getElementById("desktop-version").style.display = 'none';
-            }
-
         socket.on('connect', () => {
             console.log('connected to server');
             createNumberElement();
