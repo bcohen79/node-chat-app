@@ -10,7 +10,6 @@
             console.log('connected to server');
             createNumberElement();
             document.getElementById("visitors").getElementsByClassName("container")[0].appendChild(visitorsCounter)
-            visitorsCounter.appendChild(document.getElementById("anonymousButton"));    
     });
 
         //like when the server is down
