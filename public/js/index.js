@@ -13,6 +13,8 @@
 
             if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
               document.getElementById("mobile-version").appendChild(visitorsCounter);
+               document.getElementById("mobile-version").style.display = 'flex';
+            document.getElementById("desktop-version").style.display = 'none';
               appendFirst(document.getElementById("mobile-version"), document.getElementById("anonymousButton"));
             }
 
